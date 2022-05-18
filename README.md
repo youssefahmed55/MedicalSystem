@@ -29,8 +29,8 @@
 - Screenshots and explain of the Manger's use of the application
 - Creation of employee tasks by the Manager
 - Create an employee report
+- Recording the employee's attendance and departure from the Hospital
 - API Reference
-
 
 
 ## Dependency used in project
@@ -131,5 +131,31 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 ![login](https://user-images.githubusercontent.com/99625111/169163724-882315fc-6ac3-4203-ad41-c91ffce450e4.png)
 
 
-![splash](https://user-images.githubusercontent.com/99625111/169164083-3b7826a6-6911-4205-8f5a-383dae2a883d.png)
-![login](https://user-images.githubusercontent.com/99625111/169164087-af6f442a-fd5a-4c95-a202-07b080a92aec.png)
+## Screenshots and explain of the HR's use of the application
+
+- HR Interface
+
+![hr](https://user-images.githubusercontent.com/99625111/169166425-6ba51c36-31cd-4a0f-a6a6-ab5a40ec426d.png)
+
+
+- HR's Profile
+
+![profile](https://user-images.githubusercontent.com/99625111/169166416-2a024c9c-8ef4-44d5-812b-6b7e58cf622e.png)
+
+- Show All Employees In Hospital System
+
+![employeehr](https://user-images.githubusercontent.com/99625111/169166421-ee1e84f5-7402-417f-a957-40581c1cbe57.png)
+
+- Employee's Profile
+
+![employeeprofile](https://user-images.githubusercontent.com/99625111/169167749-d545e18a-0413-4af8-9386-a99bd515fd17.png)
+
+- Create New User To Hospital System
+
+![new user](https://user-images.githubusercontent.com/99625111/169166412-68fb95a7-5270-4149-8fd0-29b6a7d62c26.png)
+
+
+
+## Screenshots and explain of the Receptionist's use of the application
+
+
