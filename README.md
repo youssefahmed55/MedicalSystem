@@ -133,7 +133,7 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 
 ## Screenshots and explain of the HR's use of the application
 
-- HR Interface
+- HR's Interface
 
 ![hr](https://user-images.githubusercontent.com/99625111/169166425-6ba51c36-31cd-4a0f-a6a6-ab5a40ec426d.png)
 
@@ -158,4 +158,29 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 
 ## Screenshots and explain of the Receptionist's use of the application
 
+- receptionist's interface
+
+![rec](https://user-images.githubusercontent.com/99625111/169171666-c3b07a63-acf2-4282-a382-fe7f3c8ea2d6.png)
+
+- receptionist's profile
+
+![rec profile](https://user-images.githubusercontent.com/99625111/169171663-ea8fe38c-620f-4d0d-b9ae-9b3580722a14.png)
+
+- Calls that receptionist added With Doctor to Follow up patient
+
+![rec call](https://user-images.githubusercontent.com/99625111/169171656-53daa1b9-1fba-40fe-8283-2bdd2746f250.png)
+
+- Create Call
+
+![create call rec](https://user-images.githubusercontent.com/99625111/169171655-3d79ddb7-4763-4ac3-814a-c161e15ef3d6.png)
+
+- Select Doctor to Follow up patient
+
+![select doc rec](https://user-images.githubusercontent.com/99625111/169171667-bab57e5c-4bae-4b4e-a421-5cc80788c376.png)
+
+- Case or Call Details
+
+![case details rec](https://user-images.githubusercontent.com/99625111/169171671-b5c13157-2f24-4622-8733-4ab630b11f94.png)
+
+![case details2 rec](https://user-images.githubusercontent.com/99625111/169171648-d27b0775-dabb-4311-9d75-6afb74fb1562.png)
 
