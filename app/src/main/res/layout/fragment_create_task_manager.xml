@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/back_CreateTaskManager"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/c14"
+        android:textSize="@dimen/_14ssp"
+        android:text="@string/create_task"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear1_CreateTaskManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/back_CreateTaskManager"
+        app:layout_constraintBottom_toTopOf="@+id/recycle_CreateTaskManager"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+
+        >
+
+        <EditText
+            android:id="@+id/taskname_CreateTaskManager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_14ssp"
+            android:hint="@string/task_name"
+            android:paddingStart="@dimen/_10sdp"
+            android:maxLines="1"
+            android:background="@drawable/shape10"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:textCursorDrawable="@null" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/shape10"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+            <EditText
+                android:id="@+id/SelectEmployee_CreateTaskManager"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/arrow_CreateCall"
+                android:background="@null"
+                android:enabled="true"
+                android:focusable="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/select_employee"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_14ssp" />
+            <ImageView
+                android:id="@+id/arrow_CreateCall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_polygon_12"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                >
+            </ImageView>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/description_CreateTaskManager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_14ssp"
+            android:hint="@string/description"
+            android:gravity="top"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/shape10"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:textCursorDrawable="@null"
+            android:paddingEnd="@dimen/_5sdp" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_margin="@dimen/_5sdp"
+             >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="@dimen/_12ssp"
+                 android:fontFamily="@font/poppins_medium"
+                 android:text="@string/to_do"
+                 android:textColor="@color/black" />
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:gravity="end"
+                 >
+
+
+                 <ImageView
+                     android:id="@+id/addimage_CreateTaskManager"
+                     android:layout_width="@dimen/_15sdp"
+                     android:layout_height="@dimen/_15sdp"
+                     android:src="@drawable/ic_group_4679"
+                     android:layout_gravity="center"
+                     android:layout_marginEnd="@dimen/_5sdp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/_12ssp"
+                     android:fontFamily="@font/poppins_medium"
+                     android:text="@string/Add"
+                     android:textColor="@color/black" />
+
+             </LinearLayout>
+
+
+
+         </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_CreateTaskManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constrainedHeight="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/linear1_CreateTaskManager"
+        app:layout_constraintBottom_toTopOf="@+id/linear2_CreateTaskManager"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear2_CreateTaskManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dotted"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/recycle_CreateTaskManager"
+        app:layout_constraintBottom_toTopOf="@id/sendbutton_CreateTaskManager"
+        >
+
+        <ImageView
+            android:id="@+id/uploadimage_CreateTaskManager"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/ic_group_4482"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadImagebutton_CreateTaskManager"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/upload_image"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAllCaps="false"
+            android:textColor="@color/c1"
+            android:background="@drawable/shape3"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:drawableStart="@drawable/ic_baseline_add_24_2"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendbutton_CreateTaskManager"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:text="@string/send"
+        android:fontFamily="@font/poppins_regular"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/shape4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

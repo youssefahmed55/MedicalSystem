@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.medicalsystem.viewmodel.MedicalSystemViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/back_casedetails_analysis"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/_5sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/c14"
+            android:textSize="@dimen/_14ssp"
+            android:text="@string/case_details"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_casedetails_analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/back_casedetails_analysis"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp">
+
+            <TextView
+                android:id="@+id/case_casedetails_analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10ssp"
+                android:text="@string/casee"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/_5sdp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shape4"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/medicalrecord_casedetails_analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toEndOf="@id/case_casedetails_analysis"
+                android:background="@drawable/shape10"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/medical_record"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+
+            <FrameLayout
+                android:id="@+id/medicalrecordimage_casedetails_analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/shape10"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_fi_rr_treatment3" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearcase_casedetails_analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/relative_casedetails_analysis"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@string/patient_name"
+                    android:textColor="@color/c28"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/patientName_casedetails_analysis" />
+
+                <TextView
+                    android:id="@+id/patientName_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{viewModel.mutableLiveDataShowCase.patientName}"
+                    android:textColor="@color/c15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@string/age"
+                    android:textColor="@color/c28"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/age_casedetails_analysis" />
+
+                <TextView
+                    android:id="@+id/age_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{viewModel.mutableLiveDataShowCase.age}"
+                    android:textColor="@color/c15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/phoneNumber_casedetails_analysis"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/c28"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/phoneNumber_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{viewModel.mutableLiveDataShowCase.phone}"
+                    android:textColor="@color/c15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/date_casedetails_analysis"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/date"
+                    android:textColor="@color/c28"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/date_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{viewModel.mutableLiveDataShowCase.createdAt}"
+                    android:textColor="@color/c15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/doctor_casedetails_analysis"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/doctor"
+                    android:textColor="@color/c28"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/doctor_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{viewModel.mutableLiveDataShowCase.doctorId}"
+                    android:textColor="@color/c15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/analysis_casedetails_analysis"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/nurse"
+                    android:textColor="@color/c28"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/analysis_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{viewModel.mutableLiveDataShowCase.nurseId}"
+                    android:textColor="@color/c15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@string/status"
+                    android:textColor="@color/c28"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/status_casedetails_analysis" />
+
+                <TextView
+                    android:id="@+id/status_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{viewModel.mutableLiveDataShowCase.status.equals(`logout`) ? @string/finished : @string/Process   }"
+                    android:textColor="@color/c15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toStartOf="@id/image_casedetails_analysis" />
+
+                <ImageView
+                    android:id="@+id/image_casedetails_analysis"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@{viewModel.mutableLiveDataShowCase.status.equals(`logout`) ? @drawable/ic_group_4464__1_ : @drawable/ic_group_4465  }"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@string/case_description"
+                    android:textColor="@color/c28"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/CaseDescription_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@{viewModel.mutableLiveDataShowCase.description}"
+                    android:textColor="@color/c15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2medicalrecord_casedetails_analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/relative_casedetails_analysis"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/layer"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_10sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/profileimage_casedetails_analysis"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:scaleType="fitXY"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_4sdp">
+
+                    <TextView
+                        android:id="@+id/name_casedetails_analysis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@{viewModel.mutableLiveDataShowCase.analysisId}"
+                        android:textSize="@dimen/_12ssp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/specialist_casedetails_analysis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/specialist_Analysisemployee"
+                        android:textSize="@dimen/_8ssp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/c1" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/time_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c27"
+                    android:text="@{viewModel.mutableLiveDataShowCase.createdAt}"
+                    android:textSize="@dimen/_8ssp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailsnote_casedetails_analysis"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.mutableLiveDataShowCase.medicalRecordNote.contains(`%`)   ? ` ` : viewModel.mutableLiveDataShowCase.medicalRecordNote}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:textAlignment="viewStart"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <TextView
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/medical_record"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/linearimage_casedetails_analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:visibility="@{viewModel.mutableLiveDataShowCase.medicalRecordNote.contains(`%`)   ? View.GONE  : View.VISIBLE}"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardimagemedicalrecord_casedetails_analysis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/imagemedicalrecord_casedetails_analysis"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:scaleType="fitXY" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/downloadimage_casedetails_analysis"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_file_download_24px"
+                    android:layout_marginStart="@dimen/_5sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

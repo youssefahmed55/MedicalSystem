@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_list"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.medicalsystem.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_specialist_receptionistFragment"
+            app:destination="@id/specialist_receptionistFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_specialistAnalysisEmployeeFragment"
+            app:destination="@id/specialistAnalysisEmployeeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_doctorFragment"
+            app:destination="@id/doctorFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_managerFragment"
+            app:destination="@id/managerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_nurseFragment"
+            app:destination="@id/nurseFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_HRFragment"
+            app:destination="@id/HRFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/specialist_receptionistFragment"
+        android:name="com.example.medicalsystem.receptionist.specialist_receptionistFragment"
+        android:label="fragment_specialist_receptionist"
+        tools:layout="@layout/fragment_specialist_receptionist" >
+        <action
+            android:id="@+id/action_specialist_receptionistFragment_to_callsFragment"
+            app:destination="@id/callsFragment" />
+        <action
+            android:id="@+id/action_specialist_receptionistFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_specialist_receptionistFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+        <action
+            android:id="@+id/action_specialist_receptionistFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_specialist_receptionistFragment_to_attendanceandLeavingFragment"
+            app:destination="@id/attendanceandLeavingFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/callsFragment"
+        android:name="com.example.medicalsystem.receptionist.calls.CallsFragment"
+        android:label="fragment_calls"
+        tools:layout="@layout/fragment_calls" >
+        <action
+            android:id="@+id/action_callsFragment_to_createCallFragment"
+            app:destination="@id/createCallFragment" />
+        <action
+            android:id="@+id/action_callsFragment_to_caseDetailsReceptionistFragment"
+            app:destination="@id/caseDetailsReceptionistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCallFragment"
+        android:name="com.example.medicalsystem.receptionist.calls.CreateCallFragment"
+        android:label="fragment_create_call"
+        tools:layout="@layout/fragment_create_call" >
+        <action
+            android:id="@+id/action_createCallFragment_to_selectDoctorFragment"
+            app:destination="@id/selectDoctorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDoctorFragment"
+        android:name="com.example.medicalsystem.receptionist.calls.SelectDoctorFragment"
+        android:label="fragment_select_doctor"
+        tools:layout="@layout/fragment_select_doctor" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.medicalsystem.reports.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_reportFragment_to_createReportFragment"
+            app:destination="@id/createReportFragment" />
+        <action
+            android:id="@+id/action_reportFragment_to_reportDetailsFragment"
+            app:destination="@id/reportDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createReportFragment"
+        android:name="com.example.medicalsystem.reports.CreateReportFragment"
+        android:label="fragment_create_report"
+        tools:layout="@layout/fragment_create_report" />
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.example.medicalsystem.task.TasksFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" >
+        <action
+            android:id="@+id/action_tasksFragment_to_taskDetailsFragment"
+            app:destination="@id/taskDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.example.medicalsystem.profile.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/specialistAnalysisEmployeeFragment"
+        android:name="com.example.medicalsystem.analysisemployee.SpecialistAnalysisEmployeeFragment"
+        android:label="fragment_specialist_analysis_employee"
+        tools:layout="@layout/fragment_specialist_analysis_employee" >
+        <action
+            android:id="@+id/action_specialistAnalysisEmployeeFragment_to_casesAnalysisFragment"
+            app:destination="@id/casesAnalysisFragment" />
+        <action
+            android:id="@+id/action_specialistAnalysisEmployeeFragment_to_attendanceandLeavingFragment"
+            app:destination="@id/attendanceandLeavingFragment" />
+        <action
+            android:id="@+id/action_specialistAnalysisEmployeeFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_specialistAnalysisEmployeeFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+        <action
+            android:id="@+id/action_specialistAnalysisEmployeeFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/casesAnalysisFragment"
+        android:name="com.example.medicalsystem.analysisemployee.CasesAnalysisFragment"
+        android:label="fragment_requests"
+        tools:layout="@layout/fragment_cases_analysis" >
+        <action
+            android:id="@+id/action_casesAnalysisFragment_to_caseDetailsAnalysisemployeeFragment"
+            app:destination="@id/caseDetailsAnalysisemployeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/attendanceandLeavingFragment"
+        android:name="com.example.medicalsystem.attendanceandleaving.AttendanceandLeavingFragment"
+        android:label="fragment_attendanceand_leaving"
+        tools:layout="@layout/fragment_attendanceand_leaving" >
+        <action
+            android:id="@+id/action_attendanceandLeavingFragment_to_touchIDSensorFragment"
+            app:destination="@id/touchIDSensorFragment" />
+        <action
+            android:id="@+id/action_attendanceandLeavingFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/touchIDSensorFragment"
+        android:name="com.example.medicalsystem.attendanceandleaving.TouchIDSensorFragment"
+        android:label="fragment_touch_i_d_sensor"
+        tools:layout="@layout/fragment_touch_i_d_sensor" />
+
+    <fragment
+        android:id="@+id/caseDetailsReceptionistFragment"
+        android:name="com.example.medicalsystem.receptionist.CaseDetailsReceptionistFragment"
+        android:label="fragment_case_details_receptionist"
+        tools:layout="@layout/fragment_case_details_receptionist" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/doctorFragment"
+        android:name="com.example.medicalsystem.doctorandcase.DoctorFragment"
+        android:label="fragment_doctor"
+        tools:layout="@layout/fragment_doctor" >
+        <action
+            android:id="@+id/action_doctorFragment_to_callsDoctorFragment"
+            app:destination="@id/callsDoctorFragment" />
+        <action
+            android:id="@+id/action_doctorFragment_to_casesDoctorFragment"
+            app:destination="@id/casesDoctorFragment" />
+        <action
+            android:id="@+id/action_doctorFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_doctorFragment_to_attendanceandLeavingFragment"
+            app:destination="@id/attendanceandLeavingFragment" />
+        <action
+            android:id="@+id/action_doctorFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+        <action
+            android:id="@+id/action_doctorFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callsDoctorFragment"
+        android:name="com.example.medicalsystem.doctorandcase.CallsDoctorFragment"
+        android:label="fragment_calls_doctor"
+        tools:layout="@layout/fragment_calls_doctor" />
+    <fragment
+        android:id="@+id/casesDoctorFragment"
+        android:name="com.example.medicalsystem.doctorandcase.CasesDoctorFragment"
+        android:label="fragment_cases_doctor"
+        tools:layout="@layout/fragment_cases_doctor" >
+        <action
+            android:id="@+id/action_casesDoctorFragment_to_caseDetailsDoctorFragment"
+            app:destination="@id/caseDetailsDoctorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/managerFragment"
+        android:name="com.example.medicalsystem.manager.ManagerFragment"
+        android:label="fragment_manager"
+        tools:layout="@layout/fragment_manager" >
+        <action
+            android:id="@+id/action_managerFragment_to_casesManagerFragment"
+            app:destination="@id/casesManagerFragment" />
+        <action
+            android:id="@+id/action_managerFragment_to_tasksmanagerFragment"
+            app:destination="@id/tasksmanagerFragment" />
+        <action
+            android:id="@+id/action_managerFragment_to_employeeListFragment"
+            app:destination="@id/employeeListManagerFragment" />
+        <action
+            android:id="@+id/action_managerFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_managerFragment_to_attendanceandLeavingFragment"
+            app:destination="@id/attendanceandLeavingFragment" />
+        <action
+            android:id="@+id/action_managerFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/casesManagerFragment"
+        android:name="com.example.medicalsystem.manager.CasesManagerFragment"
+        android:label="fragment_cases_manager"
+        tools:layout="@layout/fragment_cases_manager" >
+        <action
+            android:id="@+id/action_casesManagerFragment_to_caseDetailsManagerFragment"
+            app:destination="@id/caseDetailsManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nurseFragment"
+        android:name="com.example.medicalsystem.nurse.NurseFragment"
+        android:label="fragment_nurse"
+        tools:layout="@layout/fragment_nurse" >
+        <action
+            android:id="@+id/action_nurseFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_nurseFragment_to_attendanceandLeavingFragment"
+            app:destination="@id/attendanceandLeavingFragment" />
+        <action
+            android:id="@+id/action_nurseFragment_to_casesNurseFragment"
+            app:destination="@id/casesNurseFragment" />
+        <action
+            android:id="@+id/action_nurseFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+        <action
+            android:id="@+id/action_nurseFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HRFragment"
+        android:name="com.example.medicalsystem.hr.HRFragment"
+        android:label="fragment_h_r"
+        tools:layout="@layout/fragment_h_r" >
+        <action
+            android:id="@+id/action_HRFragment_to_employeeListHRFragment"
+            app:destination="@id/employeeListHRFragment" />
+        <action
+            android:id="@+id/action_HRFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_HRFragment_to_attendanceandLeavingFragment"
+            app:destination="@id/attendanceandLeavingFragment" />
+        <action
+            android:id="@+id/action_HRFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+        <action
+            android:id="@+id/action_HRFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/caseDetailsDoctorFragment"
+        android:name="com.example.medicalsystem.doctorandcase.CaseDetailsDoctorFragment"
+        android:label="fragment_case_details_doctor"
+        tools:layout="@layout/fragment_case_details_doctor" >
+        <action
+            android:id="@+id/action_caseDetailsDoctorFragment_to_selectNurseFragment"
+            app:destination="@id/selectNurseFragment" />
+        <action
+            android:id="@+id/action_caseDetailsDoctorFragment_to_medicalrecordrequestFragment"
+            app:destination="@id/medicalrecordrequestFragment" />
+        <action
+            android:id="@+id/action_caseDetailsDoctorFragment_to_medicalmeasurementrequestFragment"
+            app:destination="@id/medicalmeasurementrequestFragment" />
+        <action
+            android:id="@+id/action_caseDetailsDoctorFragment_to_selectAnalysisEmployeeFragment"
+            app:destination="@id/selectAnalysisEmployeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectNurseFragment"
+        android:name="com.example.medicalsystem.doctorandcase.SelectNurseFragment"
+        android:label="fragment_select_nurse"
+        tools:layout="@layout/fragment_select_nurse" />
+    <fragment
+        android:id="@+id/caseDetailsManagerFragment"
+        android:name="com.example.medicalsystem.manager.CaseDetailsManagerFragment"
+        android:label="fragment_case_details_manager"
+        tools:layout="@layout/fragment_case_details_manager" />
+    <fragment
+        android:id="@+id/tasksmanagerFragment"
+        android:name="com.example.medicalsystem.manager.TasksmanagerFragment"
+        android:label="fragment_tasksmanager"
+        tools:layout="@layout/fragment_tasksmanager" >
+        <action
+            android:id="@+id/action_tasksmanagerFragment_to_createTaskManagerFragment"
+            app:destination="@id/createTaskManagerFragment" />
+        <action
+            android:id="@+id/action_tasksmanagerFragment_to_taskDetailsManagerFragment"
+            app:destination="@id/taskDetailsManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTaskManagerFragment"
+        android:name="com.example.medicalsystem.manager.CreateTaskManagerFragment"
+        android:label="fragment_create_task_manager"
+        tools:layout="@layout/fragment_create_task_manager" >
+        <action
+            android:id="@+id/action_createTaskManagerFragment_to_selectEmployeeManagerFragment"
+            app:destination="@id/selectEmployeeManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectEmployeeManagerFragment"
+        android:name="com.example.medicalsystem.manager.SelectEmployeeManagerFragment"
+        android:label="fragment_select_employee_manager"
+        tools:layout="@layout/fragment_select_employee_manager" />
+    <fragment
+        android:id="@+id/employeeListManagerFragment"
+        android:name="com.example.medicalsystem.manager.EmployeeListManagerFragment"
+        android:label="fragment_employee_list"
+        tools:layout="@layout/fragment_employee_list_manager" >
+        <action
+            android:id="@+id/action_employeeListManagerFragment_to_employeeProfileManagerFragment"
+            app:destination="@id/employeeProfileManagerFragment" />
+        <action
+            android:id="@+id/action_employeeListManagerFragment_to_newUserFragment"
+            app:destination="@id/newUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeListHRFragment"
+        android:name="com.example.medicalsystem.hr.EmployeeListHRFragment"
+        android:label="fragment_employee_list_h_r"
+        tools:layout="@layout/fragment_employee_list_h_r" >
+        <action
+            android:id="@+id/action_employeeListHRFragment_to_newUserFragment"
+            app:destination="@id/newUserFragment" />
+        <action
+            android:id="@+id/action_employeeListHRFragment_to_employeeProfileHRFragment"
+            app:destination="@id/employeeProfileHRFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newUserFragment"
+        android:name="com.example.medicalsystem.hr.NewUserFragment"
+        android:label="fragment_new_user"
+        tools:layout="@layout/fragment_new_user" />
+    <fragment
+        android:id="@+id/employeeProfileHRFragment"
+        android:name="com.example.medicalsystem.hr.EmployeeProfileHRFragment"
+        android:label="fragment_employee_profile_h_r"
+        tools:layout="@layout/fragment_employee_profile_h_r" />
+    <fragment
+        android:id="@+id/employeeProfileManagerFragment"
+        android:name="com.example.medicalsystem.manager.EmployeeProfileManagerFragment"
+        android:label="fragment_employee_profile_manager"
+        tools:layout="@layout/fragment_employee_profile_manager" />
+    <fragment
+        android:id="@+id/medicalrecordrequestFragment"
+        android:name="com.example.medicalsystem.requests.MedicalrecordrequestFragment"
+        android:label="fragment_medicalrecordrequest"
+        tools:layout="@layout/fragment_medicalrecordrequest" />
+    <fragment
+        android:id="@+id/medicalmeasurementrequestFragment"
+        android:name="com.example.medicalsystem.requests.MedicalmeasurementrequestFragment"
+        android:label="fragment_medicalmeasurementrequest"
+        tools:layout="@layout/fragment_medicalmeasurementrequest" />
+    <fragment
+        android:id="@+id/caseDetailsNurseFragment"
+        android:name="com.example.medicalsystem.nurse.CaseDetailsNurseFragment"
+        android:label="fragment_case_details_nurse"
+        tools:layout="@layout/fragment_case_details_nurse" >
+        <action
+            android:id="@+id/action_caseDetailsNurseFragment_to_addMeasurementNurseFragment"
+            app:destination="@id/addMeasurementNurseFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/caseDetailsAnalysisemployeeFragment"
+        android:name="com.example.medicalsystem.analysisemployee.CaseDetailsAnalysisemployeeFragment"
+        android:label="fragment_case_details_analysisemployee"
+        tools:layout="@layout/fragment_case_details_analysisemployee" >
+        <action
+            android:id="@+id/action_caseDetailsAnalysisemployeeFragment_to_addMedicalRecordAnalaysisemployeeFragment"
+            app:destination="@id/addMedicalRecordAnalaysisemployeeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addMeasurementNurseFragment"
+        android:name="com.example.medicalsystem.nurse.AddMeasurementNurseFragment"
+        android:label="fragment_add_measurement_nurse"
+        tools:layout="@layout/fragment_add_measurement_nurse" />
+
+    <fragment
+        android:id="@+id/addMedicalRecordAnalaysisemployeeFragment"
+        android:name="com.example.medicalsystem.analysisemployee.AddMedicalRecordAnalaysisemployeeFragment"
+        android:label="fragment_add_medical_record_analaysisemployee"
+        tools:layout="@layout/fragment_add_medical_record_analaysisemployee" />
+
+    <fragment
+        android:id="@+id/taskDetailsFragment"
+        android:name="com.example.medicalsystem.task.TaskDetailsFragment"
+        android:label="fragment_task_details"
+        tools:layout="@layout/fragment_task_details" />
+    <fragment
+        android:id="@+id/taskDetailsManagerFragment"
+        android:name="com.example.medicalsystem.manager.TaskDetailsManagerFragment"
+        android:label="fragment_task_details_manager"
+        tools:layout="@layout/fragment_task_details_manager" />
+    <fragment
+        android:id="@+id/reportDetailsFragment"
+        android:name="com.example.medicalsystem.reports.ReportDetailsFragment"
+        android:label="fragment_report_details"
+        tools:layout="@layout/fragment_report_details" />
+    <fragment
+        android:id="@+id/selectAnalysisEmployeeFragment"
+        android:name="com.example.medicalsystem.doctorandcase.SelectAnalysisEmployeeFragment"
+        android:label="fragment_select_analysis_employee"
+        tools:layout="@layout/fragment_select_analysis_employee" />
+    <fragment
+        android:id="@+id/casesNurseFragment"
+        android:name="com.example.medicalsystem.nurse.CasesNurseFragment"
+        android:label="fragment_cases_nurse"
+        tools:layout="@layout/fragment_cases_nurse" >
+        <action
+            android:id="@+id/action_casesNurseFragment_to_caseDetailsNurseFragment"
+            app:destination="@id/caseDetailsNurseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.medicalsystem.login.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_specialist_receptionistFragment"
+            app:destination="@id/specialist_receptionistFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_specialistAnalysisEmployeeFragment"
+            app:destination="@id/specialistAnalysisEmployeeFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_doctorFragment"
+            app:destination="@id/doctorFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_managerFragment"
+            app:destination="@id/managerFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_nurseFragment"
+            app:destination="@id/nurseFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_HRFragment"
+            app:destination="@id/HRFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/_5sdp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/doctorimage_listselectemployee"
+            android:layout_width="@dimen/_37sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+             />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_listselectemployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/_37sdp"
+        android:layout_marginTop="@dimen/_26sdp"
+        >
+
+        <ImageView
+            android:id="@+id/statue_listselectemployee"
+
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/ic_ellipse_592"
+
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linear_listselectemployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardview_listselectemployee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            >
+
+            <TextView
+                android:id="@+id/name_listselectemployee"
+                android:layout_width="@dimen/_205sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c14"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_10ssp"
+                 />
+
+            <TextView
+                android:id="@+id/Specialist_listselectemployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c17"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/_7ssp"
+                android:text="@string/specialist"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/radio_listselectemployee"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linear_listselectemployee"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:buttonTint="@color/c1"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">النظام الطبي</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Doctor">دكتور</string>
+    <string name="Nurse">ممرضة</string>
+    <string name="AnalysisEmployee">موظف التحليل</string>
+    <string name="Tododetails">للقيام بالتفاصيل</string>
+    <string name="Add">إضافة</string>
+    <string name="add_measurement">أضافة القياس</string>
+    <string name="specialist">التخصص</string>
+    <string name="add_note">اضف ملاحظة</string>
+    <string name="accept">قبول</string>
+    <string name="busy">مشغول</string>
+    <string name="add_medical_record">أضف السجل الطبي</string>
+    <string name="upload_image">رفع صوره</string>
+    <string name="add_record">إضافة سجل</string>
+    <string name="note">ملحوظة</string>
+
+    <string name="attendance">حضور</string>
+
+    <string name="leaving">مغادرة</string>
+
+    <string name="call_details">تفاصيل المكالمة</string>
+
+    <string name="calls">المكالمات</string>
+    <string name="case_details">تفاصيل الحالة</string>
+    <string name="casee">حالة</string>
+    <string name="medical_record">السجل الطبي</string>
+    <string name="show_details">اظهر التفاصيل</string>
+    <string name="patient_name">اسم المريض</string>
+    <string name="age">سن</string>
+    <string name="_24_years">٢٤ سنة</string>
+    <string name="phone_number">رقم التليفون</string>
+    <string name="_01229651459">٠١٢٢٩٦٥١٤٥٩</string>
+    <string name="date">تاريخ</string>
+
+    <string name="doctor">طبيب</string>
+
+    <string name="nurse">ممرضة</string>
+
+    <string name="status">الحالة</string>
+    <string name="finished">أنتهت</string>
+    <string name="case_description">وصف حالة</string>
+    <string name="medical_measurement">القياس الطبي</string>
+    <string name="add_nurse">اضافة ممرضة</string>
+    <string name="request">طلب</string>
+    <string name="end_case">إنهاء الحالة</string>
+
+    <string name="call_doctor">اتصل بالدكتور</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="cases">حالات</string>
+    <string name="create_call">إنشاء اتصال</string>
+    <string name="select_doctor">اختر دكتور</string>
+    <string name="send_call">إرسال مكالمة</string>
+    <string name="select_employee">حدد الموظف</string>
+    <string name="description">وصف</string>
+    <string name="create_report">إنشاء تقرير</string>
+    <string name="report_name">إنشاء تقرير</string>
+    <string name="tasks_details">تفاصيل المهام</string>
+    <string name="task_name">اسم المهمة</string>
+    <string name="to_do">لكى يفعل</string>
+    <string name="send">إرسال</string>
+    <string name="tasks">مهام</string>
+    <string name="reports">التقارير</string>
+    <string name="attendance_leaving">الحضور - المغادرة</string>
+    <string name="employee">الموظف</string>
+    <string name="search_for_employee">ابحث عن موظف</string>
+    <string name="all">الجميع</string>
+    <string name="hr_employee">موظف موارد بشرية</string>
+    <string name="analysis_employee">موظف التحليل</string>
+    <string name="my_profile">ملفي</string>
+
+    <string name="welcome_back">مرحبا بعودتك !</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="new_user">مستخدم جديد</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">الاسم الأخير</string>
+    <string name="date_of_birth">تاريخ الولادة</string>
+
+    <string name="e_mail">بريد الالكتروني</string>
+    <string name="address">عنوان</string>
+    <string name="create_user">إنشاء مستخدم</string>
+
+    <string name="add_value">إضافة قيمة</string>
+    <string name="notification">تنبيه</string>
+    <string name="the_request_has_been_canceled_successfully">تم إلغاء الطلب بنجاح</string>
+    <string name="back_to_home">العودة إلى المنزل</string>
+    <string name="report_details">تفاصيل التقرير</string>
+    <string name="end">نهاية</string>
+
+    <string name="select_analysis_employee">حدد موظف التحليل</string>
+    <string name="search_for_analysis_employee">ابحث عن موظف التحليل</string>
+    <string name="search_for_doctors">ابحث عن الأطباء</string>
+    <string name="select_nurse">حدد ممرضة</string>
+    <string name="search_for_nurse">ابحث عن ممرضة</string>
+
+    <string name="please_touch_id_sensor_to_verify_registration">يرجى لمس مستشعر الهوية للتحقق من التسجيل</string>
+    <string name="your_attendance_has_been_registered">تم تسجيل حضورك</string>
+    <string name="to_continue_login_now">للمتابعة ، قم بتسجيل الدخول الآن</string>
+    <string name="forget_password">نسيت كلمة المرور ؟</string>
+    <string name="Process">قيد المراجعة</string>
+
+
+    <string name="specialist_Doctor">أخصائي , دكتور</string>
+    <string name="specialist_Nurse">أخصائي , ممرضة</string>
+
+    <string name="specialist_Analysisemployee">أخصائي , تحليل</string>
+
+    <string name="The_email_address_is_badly_formatted">عنوان البريد الإلكتروني منسق بشكل سيئ</string>
+    <string name="Email_is_Required">البريد الالكتروني مطلوب</string>
+    <string name="Password_is_Required">كلمة المرور مطلوبة</string>
+    <string name="Internet_is_Not_Connected">الإنترنت غير متصل</string>
+    <string name="Create_New_User_Successed">تم إنشاء مستخدم جديد بنجاح</string>
+    <string name="First_Name_is_Required">الإسم الأول مطلوب</string>
+    <string name="Last_Name_is_Required">إسم العائلة مطلوب</string>
+    <string name="Gender_Required">الجنس مطلوب</string>
+    <string name="Specialist_Required">التخصص مطلوب</string>
+    <string name="Date_of_birth_is_Required">تاريخ الميلاد مطلوب</string>
+    <string name="Status_Required">الحالة مطلوبة</string>
+    <string name="Phone_Number_is_Required">رقم الهاتف مطلوب</string>
+    <string name="Address_is_Required">العنوان مطلوب</string>
+    <string name="do_you_realy_want_to_logout">متأكد أنك تريد تسجيل الخروج ؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="Empty_Calls">مكالمات فارغة</string>
+    <string name="Patient_Name_is_Required">اسم المريض مطلوب</string>
+    <string name="Age_is_Required">العمر مطلوب</string>
+    <string name="Select_Doctor_is_Required">اختر طبيب مطلوب</string>
+    <string name="Case_Description_is_Required">وصف الحالة مطلوب</string>
+    <string name="Call_Created_Successfully">تم إنشاء المكالمة بنجاح</string>
+    <string name="Login_Success">تم تسجيل الدخول بنجاح</string>
+    <string name="case_has_been_logged_out">تم تسجيل الخروج</string>
+    <string name="pending">معلقة</string>
+    <string name="Done">تم</string>
+    <string name="The_Nurse_Has_Been_Successfully_Added">تم إضافة الممرضة بنجاح</string>
+    <string name="Case_Ended_Successfully">انتهت الحالة بنجاح</string>
+    <string name="select_analysis">حدد موظف التحليل</string>
+    <string name="save">حفظ</string>
+    <string name="You_didnot_Add_Any_Measurement">لم تقم بإضافة أي قياس</string>
+    <string name="sugar_analysis_and_blood_pressure_is_required">مطلوب تحليل السكر وضغط الدم</string>
+    <string name="The_request_has_been_created">تم إنشاء الطلب</string>
+    <string name="You_Added_Request_Before">لقد أضفت الطلب من قبل</string>
+    <string name="You_Addded_Medical_Measurement_Before">لقد أضفت القياس الطبي من قبل</string>
+    <string name="The_Doctor_Has_Not_Yet_Written_Requests">لم يكتب الطبيب الطلبات بعد</string>
+    <string name="Note_Is_Required">الملاحظة مطلوبة</string>
+    <string name="Please_Write_All_Measurements_Values">الرجاء كتابة قيم جميع القياسات </string>
+    <string name="Nurse_Must_Send_Medical_Measurment_First">يجب أن ترسل الممرضة القياس الطبي أولاً</string>
+    <string name="You_Added_Medical_record_Before">قمت بإضافة السجل الطبي من قبل</string>
+    <string name="Please_Upload_Medical_Image_First">الرجاء تحميل الصورة الطبية أولا</string>
+    <string name="Medical_Record_Required">السجل الطبي مطلوب</string>
+    <string name="Medical_Measurement_Required">القياس الطبي مطلوب</string>
+    <string name="Select_Analysis_Employee_is_Required">حدد موظف التحليل مطلوب</string>
+    <string name="Doctor_Note_is_Required">مطلوب ملاحظة الطبيب</string>
+    <string name="Please_Remove">الرجاء إزالة (٪)</string>
+    <string name="Downloaded_Successfully">تم التنزيل بنجاح</string>
+    <string name="Download_Error">خطأ بالتنزيل</string>
+    <string name="You_Added_Nurse_Before">لقد أضفت ممرضة من قبل</string>
+    <string name="are_you_sure_that_you_want_to_end_case">هل أنت متأكد أنك تريد إنهاء الحالة</string>
+    <string name="profile">حساب تعريفي</string>
+    <string name="create_task">إنشاء مهمة</string>
+    <string name="Task_Name_is_Required">اسم المهمة مطلوب</string>
+    <string name="Select_Employee_is_Required">تحديد الموظف مطلوب</string>
+    <string name="Task_Description_Is_Required">مطلوب وصف المهمة</string>
+    <string name="Task_Image_Is_Required">مطلوب صورة المهمة</string>
+    <string name="To_Do_Tasks_is_Required">مطلوب القيام بالمهام</string>
+    <string name="replay">رد - </string>
+    <string name="Task_Finished_Successfully">انتهت المهمة بنجاح</string>
+    <string name="Execution">تنفيذ</string>
+    <string name="manager_description">وصف المدير :</string>
+    <string name="Report_Name_Is_Required">اسم التقرير مطلوب</string>
+    <string name="Report_Description_Is_Required">وصف التقرير مطلوب</string>
+    <string name="Report_Image_Is_Required">مطلوب صورة التقرير</string>
+    <string name="report_Created_Successfully">تم إنشاء التقرير بنجاح</string>
+    <string name="finish">أنتهي</string>
+    <string name="Success">نجح</string>
+    <string name="gender">الجنس</string>
+    <string name="Email_Or_Password_Is_Incorrect">البريد الالكتروني او كلمة المرور غير صحيحة</string>
+    <string name="reject">رفض</string>
+    <string name="The_Patient_Logout_Successfully">تم تسجيل خروج المريض بنجاح</string>
+    <string name="Your_leaving_has_been_registered" >تم تسجيل مغادرتك</string>
+    <string name="Minimum_Password_Length_Is_6">الحد الأدنى لطول كلمة المرور هو 6</string>
+    <string name="Single">اعزب</string>
+    <string name="Married">متزوج</string>
+    <string name="Male">ذكر</string>
+    <string name="Female">أنثي</string>
+
+    <string-array name="genders">
+        <item>الجنس</item>
+        <item>ذكر</item>
+        <item>أنثي</item>
+    </string-array>
+
+    <string-array name="Specialist">
+        <item>التخصص</item>
+        <item>Doctor</item>
+        <item>HR</item>
+        <item>receptionist</item>
+        <item>Analysis</item>
+        <item>manger</item>
+        <item>nurse</item>
+    </string-array>
+
+    <string-array name="Status">
+        <item>الحالة</item>
+        <item>أعزب</item>
+        <item>متزوج</item>
+    </string-array>
+
+</resources>

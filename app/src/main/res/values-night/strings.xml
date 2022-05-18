@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Doctor">Doctor</string>
+    <string name="Nurse">Nurse</string>
+    <string name="AnalysisEmployee">Analysis Employee</string>
+    <string name="Tododetails">To do details</string>
+    <string name="Add">Add</string>
+    <string name="add_measurement">Add measurement</string>
+
+    <string name="add_note">Add Note</string>
+    <string name="accept">Accept</string>
+    <string name="busy">Busy</string>
+    <string name="add_medical_record">Add medical record</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="add_record">Add record</string>
+
+
+    <string name="note">Note</string>
+
+    <string name="attendance">Attendance</string>
+
+    <string name="leaving">Leaving</string>
+    <string name="call_details">Call details</string>
+
+
+
+    <string name="calls">Calls</string>
+    <string name="case_details">Case Details</string>
+    <string name="casee">Case</string>
+    <string name="medical_record">Medical record</string>
+    <string name="show_details">Show Details</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="age">Age</string>
+    <string name="_24_years">24 years</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="_01229651459">01229651459</string>
+    <string name="date">Date</string>
+    <string name="doctor">Doctor</string>
+    <string name="nurse">Nurse</string>
+    <string name="status">Status</string>
+    <string name="finished">Finished</string>
+    <string name="case_description">Case Description</string>
+    <string name="medical_measurement">Medical measurement</string>
+    <string name="add_nurse">Add Nurse</string>
+    <string name="request">Request</string>
+    <string name="end_case">End Case</string>
+    <string name="call_doctor">Call Doctor</string>
+    <string name="logout">Logout</string>
+    <string name="cases">Cases</string>
+    <string name="create_call">Create Call</string>
+    <string name="select_doctor">Select Doctor</string>
+    <string name="send_call">Send Call</string>
+    <string name="select_employee">Select Employee</string>
+    <string name="description">Description</string>
+    <string name="create_report">Create Report</string>
+    <string name="report_name">Report Name</string>
+    <string name="tasks_details">Tasks Details</string>
+    <string name="task_name">Task Name</string>
+    <string name="to_do">To do</string>
+    <string name="send">Send</string>
+    <string name="tasks">Tasks</string>
+    <string name="reports">Reports</string>
+    <string name="attendance_leaving">attendance - leaving</string>
+    <string name="employee">Employee</string>
+    <string name="search_for_employee">Search for Employee</string>
+    <string name="all">All</string>
+    <string name="hr_employee">HR Employee</string>
+    <string name="analysis_employee">Analysis Employee</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="welcome_back">Welcome back !</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_user">New user</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <string name="specialist">Specialist</string>
+
+    <string name="date_of_birth">Date of birth</string>
+    <string name="e_mail">E-mail</string>
+    <string name="address">Address</string>
+    <string name="create_user">Create user</string>
+
+    <string name="add_value">Add Value</string>
+    <string name="notification">Notification</string>
+    <string name="the_request_has_been_canceled_successfully">The request has been canceled successfully</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="report_details">Report Details</string>
+    <string name="end">End</string>
+
+    <string name="select_analysis_employee">Select Analysis Employee</string>
+    <string name="search_for_analysis_employee">Search for Analysis Employee</string>
+    <string name="search_for_doctors">Search for doctors</string>
+    <string name="select_nurse">Select Nurse</string>
+    <string name="search_for_nurse">Search for nurse</string>
+
+    <string name="please_touch_id_sensor_to_verify_registration">Please touch ID sensor to verify registration</string>
+    <string name="your_attendance_has_been_registered">Your attendance has been registered</string>
+    <string name="to_continue_login_now">To Continue , Login Now</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="Process">Process</string>
+
+
+    <string name="specialist_Doctor">Specialist , Doctor</string>
+    <string name="specialist_Nurse">Specialist , Nurse</string>
+
+    <string name="specialist_Analysisemployee">Specialist , Analysis employee</string>
+
+    <string name="The_email_address_is_badly_formatted">The email address is badly formatted</string>
+    <string name="Email_is_Required">Email is Required</string>
+    <string name="Password_is_Required">Password is Required</string>
+    <string name="Internet_is_Not_Connected">Internet is Not Connected</string>
+    <string name="Create_New_User_Successed">Create New User Successed</string>
+    <string name="First_Name_is_Required">First Name is Required</string>
+    <string name="Last_Name_is_Required">Last Name is Required</string>
+    <string name="Gender_Required">Gender Required</string>
+    <string name="Specialist_Required">Specialist Required</string>
+    <string name="Date_of_birth_is_Required">Date of birth is Required</string>
+    <string name="Status_Required">Status Required</string>
+    <string name="Phone_Number_is_Required">Phone Number is Required</string>
+    <string name="Address_is_Required">Address is Required</string>
+    <string name="do_you_realy_want_to_logout">Do you really want to logout ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Empty_Calls">Empty Calls</string>
+    <string name="Patient_Name_is_Required">Patient Name is Required</string>
+    <string name="Age_is_Required">Age is Required</string>
+    <string name="Select_Doctor_is_Required">Select Doctor is Required</string>
+    <string name="Case_Description_is_Required">Case Description is Required</string>
+    <string name="Call_Created_Successfully">Call Created Successfully</string>
+    <string name="Login_Success">Login Success</string>
+    <string name="case_has_been_logged_out">case has been logged out</string>
+    <string name="pending">pending</string>
+    <string name="Done">Done</string>
+    <string name="The_Nurse_Has_Been_Successfully_Added">The Nurse Has Been Successfully Added</string>
+    <string name="Case_Ended_Successfully">Case Ended Successfully</string>
+    <string name="select_analysis">Select Analysis</string>
+    <string name="save">save</string>
+    <string name="You_didnot_Add_Any_Measurement">You didn\'t Add Any Measurement</string>
+    <string name="sugar_analysis_and_blood_pressure_is_required">sugar analysis and blood pressure is required</string>
+    <string name="The_request_has_been_created">The request has been created</string>
+    <string name="You_Added_Request_Before">You Added Request Before</string>
+    <string name="You_Addded_Medical_Measurement_Before">You Added Medical Measurement Before</string>
+    <string name="The_Doctor_Has_Not_Yet_Written_Requests">The Doctor Has Not Yet Written Requests</string>
+    <string name="Note_Is_Required">Note Is Required</string>
+    <string name="Please_Write_All_Measurements_Values">Please Write All Measurements Values</string>
+    <string name="Nurse_Must_Send_Medical_Measurment_First">Nurse Must Send Medical Measurment First</string>
+    <string name="You_Added_Medical_record_Before">You Added Medical record Before</string>
+    <string name="Please_Upload_Medical_Image_First">Please Upload Medical Image First</string>
+    <string name="Medical_Record_Required">Medical Record Required</string>
+    <string name="Medical_Measurement_Required">Medical Measurement Required</string>
+    <string name="Select_Analysis_Employee_is_Required">Select Analysis Employee is Required</string>
+    <string name="Doctor_Note_is_Required">Doctor Note is Required</string>
+    <string name="Please_Remove">Please Remove (%)</string>
+    <string name="Downloaded_Successfully">Downloaded Successfully</string>
+    <string name="Download_Error">Download Error</string>
+    <string name="You_Added_Nurse_Before">You Added Nurse Before</string>
+    <string name="are_you_sure_that_you_want_to_end_case">Are you sure that you want to End Case</string>
+    <string name="profile">Profile</string>
+    <string name="create_task">Create Task</string>
+    <string name="Task_Name_is_Required">Task Name is Required</string>
+    <string name="Select_Employee_is_Required">Select Employee is Required</string>
+    <string name="Task_Description_Is_Required">Task Description Is Required</string>
+    <string name="Task_Image_Is_Required">Task Image Is Required</string>
+    <string name="To_Do_Tasks_is_Required">To Do Tasks is Required</string>
+    <string name="replay">replay -</string>
+    <string name="Task_Finished_Successfully">Task Finished Successfully</string>
+    <string name="Execution">Execution</string>
+    <string name="manager_description">Manager Description :</string>
+    <string name="Report_Name_Is_Required">Report Name Is Required</string>
+    <string name="Report_Description_Is_Required">Report Description Is Required</string>
+    <string name="Report_Image_Is_Required">Report Image Is Required</string>
+    <string name="report_Created_Successfully">Report Created Successfully</string>
+    <string name="finish">Finish</string>
+    <string name="Success">Success</string>
+    <string name="gender">Gender</string>
+    <string name="Email_Or_Password_Is_Incorrect">Email Or Password Is Incorrect</string>
+    <string name="reject">reject</string>
+    <string name="The_Patient_Logout_Successfully">The Patient Logout Successfully</string>
+    <string name="Your_leaving_has_been_registered" >Your leaving has been registered</string>
+    <string name="Minimum_Password_Length_Is_6">Minimum Password Length Is 6</string>
+    <string name="Single">Single</string>
+    <string name="Married">Married</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+
+    <string-array name="genders">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="Specialist">
+        <item>Specialist</item>
+        <item>doctor</item>
+        <item>HR</item>
+        <item>receptionist</item>
+        <item>analysis</item>
+        <item>manger</item>
+        <item>nurse</item>
+    </string-array>
+
+    <string-array name="Status">
+        <item>Status</item>
+        <item>Single</item>
+        <item>Married</item>
+    </string-array>
+</resources>

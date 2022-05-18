@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1095295457530",
+    "project_id": "medical-system-764fa",
+    "storage_bucket": "medical-system-764fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095295457530:android:75d4f9d1eec2abffd5d143",
+        "android_client_info": {
+          "package_name": "com.example.medicalsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095295457530-0meoo3i7c3qbe86jl73ksicv7o30c3n7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medicalsystem",
+            "certificate_hash": "c3b35afe97d46e05e2a9fb339ad0bc2d9922715a"
+          }
+        },
+        {
+          "client_id": "1095295457530-0f6lda0o688q32uhnhrvpkasg4if5405.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7IjTS5DhOyMywKeDhiv7WAwNqUvWFx14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095295457530-0f6lda0o688q32uhnhrvpkasg4if5405.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

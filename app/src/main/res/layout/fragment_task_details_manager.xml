@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+             <variable
+                 name="viewModel"
+                 type="com.example.medicalsystem.viewmodel.MedicalSystemViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/back_Taskdetailsmanager"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/tasks_details"
+            android:textColor="@color/c14"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/taskname_Taskdetailsmanager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/c31"
+            android:textSize="@dimen/_12ssp"
+            android:text="@{viewModel.mutableLiveDataShowTask.taskName}"
+            android:background="@drawable/shape18"
+            android:layout_margin="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/back_Taskdetailsmanager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/linear1_Taskdetailsmanager"
+            android:padding="@dimen/_5sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/linear1_Taskdetailsmanager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layer"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/taskname_Taskdetailsmanager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginStart="@dimen/_10sdp"
+                   android:fontFamily="@font/poppins_regular"
+                   android:text="@string/description"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/_11ssp" />
+
+               <TextView
+                   android:id="@+id/time_Taskdetailsmanager"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins_light"
+                   android:layout_alignParentEnd="true"
+                   android:text="@{viewModel.mutableLiveDataShowTask.createdAt}"
+                   android:textColor="@color/c27"
+                   android:textSize="@dimen/_8ssp" />
+
+           </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/detailsnote_Taskdetailsmanager"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@{viewModel.mutableLiveDataShowTask.description}"
+                android:textColor="@color/black"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_9ssp" />
+
+
+        </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/lineartodo_Taskdetailsmanager"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toTopOf="@id/linearreplay_Taskdetailsmanager"
+          android:orientation="vertical"
+          android:background="@drawable/layer3"
+          android:layout_marginStart="@dimen/_10sdp"
+          android:layout_marginTop="@dimen/_10sdp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linear1_Taskdetailsmanager"
+          >
+        <TextView
+            android:id="@+id/todotext_Taskdetailsmanager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/to_do"
+            android:paddingStart="@dimen/_5sdp"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/_14ssp"
+             />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclee_Taskdetailsmanager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constrainedHeight="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+      </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearreplay_Taskdetailsmanager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineartodo_Taskdetailsmanager"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:visibility="@{viewModel.mutableLiveDataShowTask.status.equals(`done`)   ? View.VISIBLE   : View.GONE}"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:src="@drawable/ic_fi_rr_undo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@{@string/replay + viewModel.mutableLiveDataShowTask.user.specialist}"
+                    android:textColor="@color/c16"
+                    android:textSize="@dimen/_7ssp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear3_Taskdetailsmanager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/layer"
+                android:orientation="vertical"
+                android:visibility="@{viewModel.mutableLiveDataShowTask.status.equals(`done`)   ? View.VISIBLE  : View.GONE}"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/profileimage_Taskdetailsmanager"
+                            android:layout_width="@dimen/_37sdp"
+                            android:layout_height="@dimen/_37sdp"
+                            android:scaleType="fitXY" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name2_Taskdetailsmanager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@{viewModel.mutableLiveDataShowTask.user.firstName + ' ' + viewModel.mutableLiveDataShowTask.user.lastName}"
+                            android:textColor="@color/black"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:id="@+id/specialist2_Taskdetailsmanager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@{@string/specialist + ' ' + ',' + ' ' + viewModel.mutableLiveDataShowTask.user.specialist}"
+                            android:textColor="@color/c1"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/time2_Taskdetailsmanager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@{viewModel.mutableLiveDataShowTask.createdAt}"
+                        android:textColor="@color/c27"
+                        android:textSize="@dimen/_8ssp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detailsnote2_Taskdetailsmanager"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@{viewModel.mutableLiveDataShowTask.status.equals(`done`)   ? @string/Done : ` `}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

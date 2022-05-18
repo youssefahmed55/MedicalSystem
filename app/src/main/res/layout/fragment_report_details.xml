@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.medicalsystem.viewmodel.MedicalSystemViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/back_Reportdetails"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/report_details"
+            android:textColor="@color/c14"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/taskname_Reportdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/back_Reportdetails"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/c31"
+                android:textSize="@dimen/_12ssp"
+                android:text="@{viewModel.mutableLiveDataShowReport.reportName}"
+                android:background="@drawable/shape18"
+                android:textAlignment="viewStart"
+                android:padding="@dimen/_5sdp" />
+
+            <TextView
+                android:id="@+id/End_Reportdetails"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:text="@string/end"
+                android:background="@drawable/shape14"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear1_Reportdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/taskname_Reportdetails"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/profileimage_Reportdetails"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:scaleType="fitXY" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_Reportdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@{viewModel.mutableLiveDataShowReport.user.firstName + ' ' + viewModel.mutableLiveDataShowReport.user.lastName }"
+                        android:textColor="@color/black"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/specialist_Reportdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@{@string/specialist + ' ' + ',' + ' ' + viewModel.mutableLiveDataShowReport.user.specialist }"
+                        android:textColor="@color/c1"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/time_Reportdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.mutableLiveDataShowReport.createdAt}"
+                    android:textColor="@color/c27"
+                    android:textSize="@dimen/_8ssp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailsnote_Reportdetails"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@{viewModel.mutableLiveDataShowReport.description}"
+                android:textColor="@color/black"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_9ssp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearreplayReportdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear1_Reportdetails"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="@{viewModel.mutableLiveDataShowReport.status.equals(`done`)   ? View.VISIBLE  : View.GONE }"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:src="@drawable/ic_fi_rr_undo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@{@string/replay + viewModel.mutableLiveDataShowReport.manger.specialist}"
+                android:textColor="@color/c16"
+                android:textSize="@dimen/_7ssp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear3Reportdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/layer"
+            android:orientation="vertical"
+            android:visibility="@{viewModel.mutableLiveDataShowReport.status.equals(`done`)   ? View.VISIBLE  : View.GONE}"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/profileimage2_Reportdetails"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:scaleType="fitXY" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name2Reportdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@{viewModel.mutableLiveDataShowReport.manger.firstName + ' ' + viewModel.mutableLiveDataShowReport.manger.lastName}"
+                        android:textColor="@color/black"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/specialist2Reportdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@{@string/specialist + ' ' + ',' + ' ' + viewModel.mutableLiveDataShowReport.manger.specialist}"
+                        android:textColor="@color/c1"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/time2Reportdetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@{viewModel.mutableLiveDataShowReport.createdAt}"
+                    android:textColor="@color/c27"
+                    android:textSize="@dimen/_8ssp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailsnote2Reportdetails"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@{viewModel.mutableLiveDataShowReport.status.equals(`done`)   ? @string/Done : ` `}"
+                android:textColor="@color/black"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_9ssp" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Finishbutton_Reportdetails"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/shape4"
+            android:text="@string/finish"
+            android:textSize="@dimen/_10ssp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="@{viewModel.loginDataMutableLiveData.specialist.equals(viewModel.mutableLiveDataShowReport.user.specialist) || viewModel.mutableLiveDataShowReport.status.equals(`done`)   ? View.GONE  : View.VISIBLE }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

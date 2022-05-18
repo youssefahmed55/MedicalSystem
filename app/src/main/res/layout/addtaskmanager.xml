@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomsheet2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_constraintTop_toBottomOf="@+id/back_calloverlay"
+    app:layout_constraintStart_toStartOf="parent"
+    android:paddingStart="@dimen/_5sdp"
+    android:paddingEnd="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_20sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rectangle_1563"
+        android:paddingTop="@dimen/_5sdp"
+        android:layout_gravity="center" />
+
+
+    <EditText
+        android:id="@+id/edittext_addtaskmanager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_155sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_14ssp"
+        android:hint="@string/Tododetails"
+        android:gravity="top"
+
+        android:paddingStart="@dimen/_10sdp"
+        android:background="@drawable/shape10"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:textCursorDrawable="@null" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addbutton_addtaskmanager"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:text="@string/Add"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape4" />
+</LinearLayout>

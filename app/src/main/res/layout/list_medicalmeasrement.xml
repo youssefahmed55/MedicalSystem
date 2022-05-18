@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    >
+
+    <ImageView
+        android:id="@+id/iconimage_listmedicalmeasurement"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_ellipse_613"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/measurementname_listmedicalmeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_10ssp"
+        android:textAlignment="viewStart"
+        android:layout_toEndOf="@id/iconimage_listmedicalmeasurement"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/measurementvalue_listmedicalmeasurement"
+        android:layout_marginStart="@dimen/_5sdp" />
+
+    <TextView
+        android:id="@+id/measurementvalue_listmedicalmeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_10ssp"
+        android:textAlignment="viewStart"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>
