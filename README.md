@@ -131,3 +131,5 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 ![login](https://user-images.githubusercontent.com/99625111/169163724-882315fc-6ac3-4203-ad41-c91ffce450e4.png)
 
 
+![splash](https://user-images.githubusercontent.com/99625111/169164083-3b7826a6-6911-4205-8f5a-383dae2a883d.png)
+![login](https://user-images.githubusercontent.com/99625111/169164087-af6f442a-fd5a-4c95-a202-07b080a92aec.png)
