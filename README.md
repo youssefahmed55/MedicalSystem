@@ -168,7 +168,7 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 
 - Calls that receptionist added With Doctor to Follow up patient
 
-![rec call](https://user-images.githubusercontent.com/99625111/169171656-53daa1b9-1fba-40fe-8283-2bdd2746f250.png)
+![calls rec](https://user-images.githubusercontent.com/99625111/169188650-bd8508a0-cc2c-4a79-aa14-f11ade74dffe.png)
 
 - Create Call
 
@@ -180,7 +180,55 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 
 - Case or Call Details
 
-![case details rec](https://user-images.githubusercontent.com/99625111/169171671-b5c13157-2f24-4622-8733-4ab630b11f94.png)
+![case details rec](https://user-images.githubusercontent.com/99625111/169188586-2b0b2e86-7a4d-4820-b422-79b71ebd6305.png)
+
 
 ![case details2 rec](https://user-images.githubusercontent.com/99625111/169171648-d27b0775-dabb-4311-9d75-6afb74fb1562.png)
 
+
+## Screenshots and explain of the Doctor's use of the application
+
+- Doctor's interface
+
+![doctor](https://user-images.githubusercontent.com/99625111/169188914-d3fa8537-df55-4ef4-bca1-c39117f4d7f6.png)
+
+- Doctor's Profile
+
+![doctor profile](https://user-images.githubusercontent.com/99625111/169188920-3a80d3f4-e58f-41b2-8fa9-b856353d330e.png)
+
+- Accept Calls or Reject them
+
+![calls doc](https://user-images.githubusercontent.com/99625111/169188937-33603098-e713-406c-a97e-44385fa9b7a1.png)
+
+- Cases or Calls That Doctor Accepted
+
+![cases doc](https://user-images.githubusercontent.com/99625111/169188929-e201bfae-5915-4110-98df-537e38477399.png)
+
+- Case Details
+
+![case details doc](https://user-images.githubusercontent.com/99625111/169188932-faebb43d-9b7c-4a15-a0f5-aa27646dd8ec.png)
+
+- Select Nurse to Case
+
+![select nurse doc](https://user-images.githubusercontent.com/99625111/169188939-5cae6dae-d676-4b6e-bd1d-6e40483ad2c7.png)
+
+- Here Doctor Can Write Note And Send Requests To Nurse And Analysis Employees 
+
+![case details request doc](https://user-images.githubusercontent.com/99625111/169188930-3a6efa7e-a741-4b18-86c5-326888c0d356.png)
+
+
+- Choose Medical Record Requests That Doctor need them from Analysis
+
+![medical record request doc](https://user-images.githubusercontent.com/99625111/169188946-45c26130-cd4a-498a-836a-f9946ea9b47d.png)
+
+- Choose Medical Measurement Requests That Doctor need them from Nurse
+
+![medical measurement request doc](https://user-images.githubusercontent.com/99625111/169188905-7fe7c7eb-5d64-4acb-8027-f26ab884f430.png)
+
+- Select Analysis Employee
+
+![select analysis doc](https://user-images.githubusercontent.com/99625111/169188943-80b17d8f-76ef-4266-b73c-3e8bb7bfb694.png)
+
+- If Doctor need to End Case
+
+![end case doc](https://user-images.githubusercontent.com/99625111/169188911-8e0efa57-b4e9-43c2-827c-c9ca04d3f534.png)
