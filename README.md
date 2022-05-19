@@ -232,3 +232,57 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 - If Doctor need to End Case
 
 ![end case doc](https://user-images.githubusercontent.com/99625111/169188911-8e0efa57-b4e9-43c2-827c-c9ca04d3f534.png)
+
+## Screenshots and explain of the Nurse's use of the application
+
+- Nurse's interface
+
+![nurse](https://user-images.githubusercontent.com/99625111/169370628-9f835854-d529-4031-9d81-3ac50c1903bf.jpg)
+
+- Nurse's profile
+
+![nurse profile](https://user-images.githubusercontent.com/99625111/169370622-e48809ed-dc95-4a90-b79a-f3c1363a4316.jpg)
+
+- Nurse's Cases
+
+![cases](https://user-images.githubusercontent.com/99625111/169370607-5102a934-0a3b-4d74-85ee-6216f6c7c1ce.jpg)
+
+- Case Details
+
+![case details](https://user-images.githubusercontent.com/99625111/169370602-6efc6f03-96b5-44d2-88c1-edf4de8ebf76.jpg)
+
+![case details 2](https://user-images.githubusercontent.com/99625111/169370587-ea3a0682-6020-4005-a1d4-1fe6e26625c5.jpg)
+
+
+- Add Measurements
+
+![add measurement](https://user-images.githubusercontent.com/99625111/169370635-ab1f545e-17cb-4153-bdbd-d599140dfdfd.jpg)
+
+
+## Screenshots and explain of the Analysis's use of the application
+
+- Analysis's Interface
+
+![analysis](https://user-images.githubusercontent.com/99625111/169387793-19e81747-1d7d-4d2f-8f19-173a85f0db89.jpg)
+
+- Analysis's Profile
+
+![analysis profile](https://user-images.githubusercontent.com/99625111/169387817-b949428a-977b-4520-8224-9e4279c667f1.jpg)
+
+
+- Analysis's Cases
+
+![cases analysis](https://user-images.githubusercontent.com/99625111/169387806-744ad431-8a0a-4413-9818-9dfb5646f46d.jpg)
+
+
+- Case Details
+
+![case details analysis](https://user-images.githubusercontent.com/99625111/169387804-4753e4a8-4e88-4b02-89b8-2a9a237ee922.jpg)
+
+![case details 2 analysis](https://user-images.githubusercontent.com/99625111/169387799-24c7a63d-48d3-436a-9d25-42062d6b9ed1.jpg)
+
+
+- Add Medical Record
+
+![add medical record](https://user-images.githubusercontent.com/99625111/169387810-71e21cfb-212d-4922-bc4b-225694c6a5e5.jpg)
+
