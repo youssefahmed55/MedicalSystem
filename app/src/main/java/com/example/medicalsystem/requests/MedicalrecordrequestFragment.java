@@ -71,8 +71,9 @@ public class MedicalrecordrequestFragment extends Fragment {
     private FragmentMedicalrecordrequestBinding binding;
     private View view;
     private ArrayList<String> arrayList ;
-    private final String medicalRecordRequestsArray[] = {"blood pressure","sugar analysis","tempreture","fluid balance","respiratory rate","heart rate"};
-    private final int medicalRecordRequestsIdArray[] = {R.id.blood_pressure,R.id.sugar_analysis,R.id.tempreture,R.id.fluid_balance,R.id.respiratory_rate,R.id.heart_rate};
+
+    private final String medicalRecordRequestsArray[] = {"SGOT,SGPT","ESR","Lipid profile"};
+    private final int medicalRecordRequestsIdArray[] = {R.id.SGOTSGPT,R.id.ESR,R.id.Lipidprofile};
     private MyRecycleAdapterMedical myRecycleAdapterMedical;
 
     @Override
@@ -103,6 +104,20 @@ public class MedicalrecordrequestFragment extends Fragment {
         });
     }
 
+    private PopupMenu RemoveSelectedRequests(ArrayList<String> arrayList, PopupMenu popupMenu) {
+        for(int i = 0 ; i < arrayList.size() ; i++){
+            String s = arrayList.get(i);
+            for (int j = 0 ; j < medicalRecordRequestsArray.length ; j++){
+                if(s.equals(medicalRecordRequestsArray[j])){
+                    popupMenu.getMenu().removeItem(medicalRecordRequestsIdArray[j]);
+                }
+            }
+        }
+        return popupMenu ;
+
+
+    }
+
     private void appearsSelectedRequested() {
         if(medicalRequests.contains("-")){
             String s[] = medicalRequests.split("-");
@@ -129,7 +144,7 @@ public class MedicalrecordrequestFragment extends Fragment {
                   PopupMenu popupMenu = new PopupMenu(getActivity(), binding.AddmeasurementMedicalrecordrequest);
 
                   // Inflating popup menu from popup_menu.xml file
-                  popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
+                  popupMenu.getMenuInflater().inflate(R.menu.popup_menu2, popupMenu.getMenu());
                   popupMenu =RemoveSelectedRequests(arrayList,popupMenu);    //Remove Requests that Selected Before
                   popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                       @Override
@@ -146,19 +161,7 @@ public class MedicalrecordrequestFragment extends Fragment {
           });
     }
 
-    private PopupMenu RemoveSelectedRequests(ArrayList<String> arrayList, PopupMenu popupMenu) {
-        for(int i = 0 ; i < arrayList.size() ; i++){
-            String s = arrayList.get(i);
-        for (int j = 0 ; j < medicalRecordRequestsArray.length ; j++){
-            if(s.equals(medicalRecordRequestsArray[j])){
-                popupMenu.getMenu().removeItem(medicalRecordRequestsIdArray[j]);   //remove item from menu
-            }
-        }
-        }
-        return popupMenu ;
 
-
-    }
 
     private void onClickOnDeleteRequest() {
         myRecycleAdapterMedical.setOnClickListeners(new MyRecycleAdapterMedical.OnmyClickListenerrr() {
@@ -176,21 +179,16 @@ public class MedicalrecordrequestFragment extends Fragment {
             public void onClick(View v) {
 
                 if (arrayList.size() > 0) {
-                    if(arrayList.contains("sugar analysis" )&& arrayList.contains("blood pressure")){
                     String s = "";
-                   for (int i = 0 ; i  < arrayList.size() ; i++){
+                    for (int i = 0 ; i  < arrayList.size() ; i++){
                         if(i == arrayList.size() - 1)
-                        s += arrayList.get(i) ;
+                            s += arrayList.get(i) ;
                         else
-                        s += arrayList.get(i) + "-";
-
+                            s += arrayList.get(i) + "-";
                     }
                     //save data to get it from previous Fragment
                     Navigation.findNavController(view).getPreviousBackStackEntry().getSavedStateHandle().set("keyRecoredRequests", s); //Save Data To Previous Fragment
                     Navigation.findNavController(view).popBackStack(); //Back to previous Fragment
-                    }else{
-                        Toast.makeText(getActivity(), getString(R.string.sugar_analysis_and_blood_pressure_is_required), Toast.LENGTH_SHORT).show();
-                    }
                 }else {
                     Toast.makeText(getActivity(), getString(R.string.You_didnot_Add_Any_Measurement), Toast.LENGTH_SHORT).show();
                 }

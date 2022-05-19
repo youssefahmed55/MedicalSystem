@@ -152,6 +152,21 @@ public class HRFragment extends Fragment {
                 cdd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 cdd.show(); //Show Dialog
 
+                cdd.findViewById(R.id.btn_yes).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        medicalSystemViewModel.deleteDataOfLogin();       //Delete Data of Login From SharedPrefrences
+                        medicalSystemViewModel.deleteDate();              //Delete Date From SharedPrefrences
+                        Navigation.findNavController(view).popBackStack();//Back to previous Fragment
+                        cdd.dismiss();  //Hide Dialog
+                    }
+                });
+                cdd.findViewById(R.id.btn_no).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        cdd.dismiss();    //Hide Dialog
+                    }
+                });
 
             }
         });
