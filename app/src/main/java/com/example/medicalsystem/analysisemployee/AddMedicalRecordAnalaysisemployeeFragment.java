@@ -212,7 +212,7 @@ public class AddMedicalRecordAnalaysisemployeeFragment extends Fragment {
         String[] s = caseResponseData.getMedicalRecordNote().split("%");
 
         if(s.length == 3){
-            String[] ss = s[1].split("-");
+            String[] ss = s[0].split("-");
             for(int j = 0 ; j < ss.length ; j++){
                 arrayList.add(new MedicalModel(ss[j],""));
             }
