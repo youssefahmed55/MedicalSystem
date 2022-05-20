@@ -30,7 +30,7 @@
 - Creation of employee tasks by the Manager
 - Create an employee report
 - Recording the employee's attendance and departure from the Hospital
-- API Reference
+- Download And Contact
 
 
 ## Dependency used in project
@@ -286,3 +286,105 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 
 ![add medical record](https://user-images.githubusercontent.com/99625111/169387810-71e21cfb-212d-4922-bc4b-225694c6a5e5.jpg)
 
+
+## Screenshots and explain of the Manger's use of the application
+
+- Manager's interface
+
+![manger](https://user-images.githubusercontent.com/99625111/169424742-0a7fa29f-14e7-49ca-bb5b-73db350f43cd.jpg)
+
+- Manger's Profile
+
+![profile](https://user-images.githubusercontent.com/99625111/169424745-b36d64e4-9306-4e74-9925-1acb6f74a0d2.jpg)
+
+- Show All Employees In Hospital System
+
+![employee manager](https://user-images.githubusercontent.com/99625111/169424737-580954b2-9cf7-45ca-a13c-023404710723.jpg)
+
+- Employee's Profile
+
+![employeeprofile](https://user-images.githubusercontent.com/99625111/169167749-d545e18a-0413-4af8-9386-a99bd515fd17.png)
+
+- Create New User Like What HR Does
+
+![new user manager](https://user-images.githubusercontent.com/99625111/169424744-6ae3348a-f825-445a-a747-951964dfb81d.jpg)
+
+- Show All Cases
+
+![cases manager](https://user-images.githubusercontent.com/99625111/169424735-03e894dd-c698-4e18-8f2a-5c7b4fc6db0d.jpg)
+
+- Case Details
+
+![case details](https://user-images.githubusercontent.com/99625111/169424731-f045681a-527b-4433-ab04-69cb57dcbb05.jpg)
+
+![case details 2](https://user-images.githubusercontent.com/99625111/169424726-67cc4c64-78e2-4a98-905d-831e497e4e61.jpg)
+
+![case details 3](https://user-images.githubusercontent.com/99625111/169424728-2b05bb55-ae77-4df9-8854-d706404083b5.jpg)
+
+
+
+## Creation of employee tasks by the Manager
+
+- Show All Tasks 
+
+![tasks manger](https://user-images.githubusercontent.com/99625111/169426799-fb9c38dc-58ec-422b-8070-999348803ad6.jpg)
+
+- Create Task
+
+![create task manager](https://user-images.githubusercontent.com/99625111/169426782-e9779094-1000-4ba5-ad80-f1f4bb879248.png)
+
+- Select Employee That Manger Need To Do Tasks
+
+![select employee](https://user-images.githubusercontent.com/99625111/169426786-a54ecde0-d0d1-4ea9-b852-e688be042e07.png)
+
+- Task Details 
+
+![Task Details manger](https://user-images.githubusercontent.com/99625111/169426796-422ecda7-7a84-40cd-95c6-981dd0d05970.png)
+
+- Tasks Appears with Employee
+
+![Tasks Doctor](https://user-images.githubusercontent.com/99625111/169426801-6c328b3c-5e7b-4266-827e-c7f32d7ce6b7.jpg)
+
+- Task Details Appears With Employee
+ 
+![Task details from Doctor](https://user-images.githubusercontent.com/99625111/169426793-f339e260-acca-43c1-aaf9-5871da7cacb4.png)
+
+![Task Details From Doctor 2](https://user-images.githubusercontent.com/99625111/169426790-df0db954-1f9b-4f36-8721-0b237c23cd45.png)
+
+
+## Create an employee report
+
+- Employee's Reports
+
+![reports employee](https://user-images.githubusercontent.com/99625111/169431340-f4873778-c8ab-4800-a7fc-92c8993ba60a.png)
+
+- Create Report
+
+![create report employee](https://user-images.githubusercontent.com/99625111/169431326-9c3e5966-7b68-4e5f-ab59-df00fd398d19.png)
+
+- Show All Reports To Manger
+
+![reports manger](https://user-images.githubusercontent.com/99625111/169431343-94bfdfef-a754-4c84-91ce-623e6f153053.png)
+
+- Manager That Can Finish Report To Employee
+
+![report details manager](https://user-images.githubusercontent.com/99625111/169431331-ffac35b4-5b58-4b14-b070-cfc5dfd228be.png)
+
+- Report Details 
+
+![report details employee and manger](https://user-images.githubusercontent.com/99625111/169431329-009456f6-6721-486b-ad4a-516cfc2a9495.png)
+
+![report details2 manget and employee](https://user-images.githubusercontent.com/99625111/169431338-1dc639d2-03f3-4fb9-827e-cbcbe369333f.png)
+
+
+## Recording the employee's attendance and departure from the Hospital
+
+
+![attendane and leaving](https://user-images.githubusercontent.com/99625111/169434220-a1f816c9-8291-48c0-8b25-077fa53f9a54.png)
+
+![attendance](https://user-images.githubusercontent.com/99625111/169434230-584d5a35-b556-44da-97e8-031702457191.png)
+
+![leaving](https://user-images.githubusercontent.com/99625111/169434224-4270716f-9aad-4425-8b73-64c1555188f0.png)
+
+
+## Download And Contact
