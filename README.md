@@ -30,7 +30,7 @@
 - Creation of employee tasks by the Manager
 - Create an employee report
 - Recording the employee's attendance and departure from the Hospital
-- Download And Contact
+- Download Apk And Contact
 
 
 ## Dependency used in project
@@ -388,3 +388,7 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 
 
 ## Download And Contact
+
+- Downioad Apk : https://www.mediafire.com/file/75cdof6800w7doy/Medical+System.apk/file
+
+- Contact : joussefahmed2012@gmail.com
