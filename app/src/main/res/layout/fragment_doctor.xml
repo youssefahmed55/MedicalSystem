@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".receptionist.specialist_receptionistFragment"
-
+        android:splitMotionEvents="false"
 
         >
 
@@ -99,6 +99,7 @@
             android:orientation="vertical"
             android:background="@drawable/shape5"
             android:gravity="center"
+
             app:layout_constraintTop_toBottomOf="@+id/profile_doctor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tasks_doctor"
