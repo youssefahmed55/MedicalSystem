@@ -387,7 +387,7 @@ implementation 'com.github.GrenderG:Toasty:1.5.2'
 ![leaving](https://user-images.githubusercontent.com/99625111/169434224-4270716f-9aad-4425-8b73-64c1555188f0.png)
 
 
-## Download And Contact
+## Download Apk And Contact
 
 - Downioad Apk : https://www.mediafire.com/file/75cdof6800w7doy/Medical+System.apk/file
 
