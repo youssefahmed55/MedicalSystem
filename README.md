@@ -14,6 +14,7 @@
 
 - The Application supports English and Arabic languages
 - The Project is written in Java
+- Using View Binding And Data Binding
 - The Application can be used to organize the Hospital Administration
 
 
